@@ -1,0 +1,10 @@
+# Core dependencies for diff analysis
+PyGithub>=1.55
+GitPython>=3.1.20
+requests>=2.25.1
+python-dotenv>=0.19
+typing==3.7.4.3
+argparse==1.4.0
+
+# Dependencies for LLM summarization
+anthropic>=0.20.0 

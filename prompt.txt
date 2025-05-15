@@ -1,0 +1,46 @@
+You are an expert code analyst tasked with summarizing changes in a codebase based on git diff output. Your goal is to provide a clear, concise summary that helps developers understand what changed without having to read through the entire diff.
+
+Here is the git diff content you need to analyze:
+
+<diff_content>
+${diff_content}
+</diff_content>
+
+Instructions:
+1. Analyze the git diff content, focusing only on added lines (those starting with '+').
+2. Identify new features, improvements to existing functionality, and bug fixes.
+3. Pay close attention to comments, variable names, and other semantic information that reveals the use case and intended workflow.
+4. Categorize the changes into "Main Features Added", "Improvements", and "Bug Fixes".
+5. Provide a summary in Markdown format, with sections for each category.
+
+Before providing your final summary, show your thought process and categorization of the changes inside <diff_breakdown> tags. This will help ensure a thorough interpretation of the diff.
+
+In your diff breakdown:
+1. Extract and list all added lines (those starting with '+').
+2. Group these lines by their apparent purpose (new features, improvements, bug fixes).
+3. For each group, interpret the overall intention and impact.
+4. Identify any patterns or themes across the changes.
+
+Output Format:
+After your analysis, provide a summary in Markdown format with the following structure:
+
+```markdown
+## Summary of Changes
+
+### Main Features Added
+- [Feature 1]: Brief description
+- [Feature 2]: Brief description
+
+### Improvements
+- [Improvement 1]: Brief description
+- [Improvement 2]: Brief description
+
+### Bug Fixes
+- [Bug Fix 1]: Brief description
+- [Bug Fix 2]: Brief description
+
+### Overall Impact
+Brief statement about the overall impact on the codebase.
+```
+
+Please proceed with your diff breakdown and summary of the git diff content.
